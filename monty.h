@@ -9,7 +9,7 @@
 #include <string.h>
 #include <ctype.h>
 
-/*
+/**
  * struct stack_s - doubly linked list representation of a stack
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
@@ -26,7 +26,7 @@ typedef struct stack_s
 	struct stack_s *next;
 }stack_t;
 
-/*
+/**
  * struct bus_s - variables -args, file, line content
  * @arg: value
  * @file: pointer to monty file
@@ -62,8 +62,8 @@ typedef struct instruction_s
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char *clean_line(char *content);
-void func_push(stack_t **head, unsigned int number);
-void func_pall(stack_t **head, unsigned int number);
+void func_push(stack_t **head, unsigned int count);
+void func_pall(stack_t **head, unsigned int count);
 void f_pint(stack_t **head, unsigned int number);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);

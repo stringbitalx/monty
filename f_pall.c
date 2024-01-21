@@ -6,10 +6,10 @@
  * @counter: no used
  * Return: none
  */
-void func_pall(stack_t **head, unsigned int ctr)
+void func_pall(stack_t **head, unsigned int count)
 {
 	stack_t *h;
-	(void)ctr;
+	(void)count;
 
 	h = *head;
 	if (h == NULL)
