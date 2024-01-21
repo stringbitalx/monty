@@ -35,14 +35,14 @@ typedef struct stack_s
  * Description: carries values through the program
  */
 
-typedef struct bus_s
+typedef struct bus_a
 {
 	char *arg;
 	FILE *file;
 	char *content;
 	int lifi;
-} bus_t;
-extern bus_t bus;
+} bus_b;
+extern bus_b bus;
 
 /**
  * struct instruction_s - opcode and its function

@@ -18,6 +18,6 @@ void func_pop(stack_t **head, unsigned int count)
 		exit(EXIT_FAILURE);
 	}
 	a = *head;
-	*head = h->next;
+	*head = a->next;
 	free(a);
 }
