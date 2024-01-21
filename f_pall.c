@@ -3,7 +3,7 @@
 /**
  * func_pall - prints the stack
  * @head: stack head
- * @counter: no used
+ * @count: no used
  * Return: none
  */
 void func_pall(stack_t **head, unsigned int count)
@@ -16,7 +16,7 @@ void func_pall(stack_t **head, unsigned int count)
 		return;
 	while (h)
 	{
-		printf ("%d\n", h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
 }

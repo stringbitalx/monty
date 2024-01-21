@@ -2,10 +2,10 @@
 /**
  * func_push - add node to the stack
  * @head: stack head
- * @counter: line number
+ * @count: line number
  * Return: none
  */
-void func_push(stack_t **head, unsigned int ctr)
+void func_push(stack_t **head, unsigned int count)
 {
 	int a, b = 0, flg = 0;
 
@@ -13,12 +13,12 @@ void func_push(stack_t **head, unsigned int ctr)
 	{
 		if (bus.arg[0] == '-')
 			b++;
-		for (; bus.arg[b] != '\0'; j++)
+		for (; bus.arg[b] != '\0'; b++)
 			if (bus.arg[b] > 57 || bus.arg[b] < 48)
 				flg = 1;
 		if (flg == 1)
 		{
-			fprintf(stderr, "L%d: usage: push integer\n", ctr);
+			fprintf(stderr, "L%d: usage: push integer\n", count);
 			fclose(bus.file);
 			free(bus.content);
 			free_stack(*head);
@@ -27,7 +27,7 @@ void func_push(stack_t **head, unsigned int ctr)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", ctr);
+		fprintf(stderr, "L%d: usage: push integer\n", count);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
