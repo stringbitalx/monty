@@ -16,7 +16,7 @@ int execute(char *content, stack_t **stack, unsigned int count, FILE *file)
 				{"pop", func_pop},
 				{"swap", f_swap},
 				{"add", func_add},
-				{"nop", f_nop},
+				{"nop", func_nop},
 				{"sub", f_sub},
 				{"div", f_div},
 				{"mul", f_mul},
