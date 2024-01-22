@@ -19,7 +19,7 @@ int execute(char *content, stack_t **stack, unsigned int count, FILE *file)
 				{"nop", func_nop},
 				{"sub", f_sub},
 				{"div", f_div},
-				{"mul", f_mul},
+				{"mul", func_mul},
 				{"mod", f_mod},
 				{"pchar", f_pchar},
 				{"pstr", f_pstr},
