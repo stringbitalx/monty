@@ -69,7 +69,7 @@ void func_pint(stack_t **head, unsigned int count);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 void func_pop(stack_t **head, unsigned int count);
-void f_swap(stack_t **head, unsigned int counter);
+void func_swap(stack_t **head, unsigned int count);
 void func_add(stack_t **head, unsigned int count);
 void func_nop(stack_t **head, unsigned int count);
 void f_sub(stack_t **head, unsigned int counter);
