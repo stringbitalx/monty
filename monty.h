@@ -70,7 +70,7 @@ int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 void func_pop(stack_t **head, unsigned int count);
 void f_swap(stack_t **head, unsigned int counter);
-void f_add(stack_t **head, unsigned int counter);
+void func_add(stack_t **head, unsigned int count);
 void f_nop(stack_t **head, unsigned int counter);
 void f_sub(stack_t **head, unsigned int counter);
 void f_div(stack_t **head, unsigned int counter);
