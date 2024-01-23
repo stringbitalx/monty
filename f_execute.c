@@ -20,6 +20,7 @@ int execute(char *content, stack_t **stack, unsigned int count, FILE *file)
 				{"mul", func_mul},
 				{"queue", func_queue},
 				{"stack", func_stack},
+				{"sub", func_sub},
 				{NULL, NULL}
 				};
 	unsigned int a = 0;

@@ -77,5 +77,6 @@ void addnode(stack_t **head, int a);
 void addqueue(stack_t **head, int a);
 void func_queue(stack_t **head, unsigned int count);
 void func_stack(stack_t **head, unsigned int count);
+void func_sub(stack_t **head, unsigned int count);
 
 #endif
