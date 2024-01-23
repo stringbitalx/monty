@@ -78,5 +78,10 @@ void addqueue(stack_t **head, int a);
 void func_queue(stack_t **head, unsigned int count);
 void func_stack(stack_t **head, unsigned int count);
 void func_sub(stack_t **head, unsigned int count);
-
+void func_pstr(stack_t **head, unsigned int count);
+void func_rotr(stack_t **head, __attribute__((unused)) unsigned int count);
+void func_rotl(stack_t **head, __attribute__((unused)) unsigned int count);
+void func_pchar(stack_t **head, unsigned int count);
+void func_mod(stack_t **head, unsigned int count);
+void func_div(stack_t **head, unsigned int count);
 #endif

@@ -21,6 +21,12 @@ int execute(char *content, stack_t **stack, unsigned int count, FILE *file)
 				{"queue", func_queue},
 				{"stack", func_stack},
 				{"sub", func_sub},
+				{"rotr", func_rotr},
+				{"rotl", func_rotl},
+				{"pstr", func_pstr},
+				{"pchar", func_pchar},
+				{"mod", func_mod},
+				{"div", func_div},
 				{NULL, NULL}
 				};
 	unsigned int a = 0;
